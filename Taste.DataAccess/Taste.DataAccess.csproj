@@ -11,4 +11,15 @@
     <PackageReference Include="Stripe.net" Version="36.11.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+    <Folder Include="Initializer\" />
+    <Folder Include="Repository\IRepository\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Taste.Models\Taste.Models.csproj" />
+    <ProjectReference Include="..\Taste.Utility\Taste.Utility.csproj" />
+  </ItemGroup>
+
 </Project>
