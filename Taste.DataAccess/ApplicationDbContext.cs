@@ -12,5 +12,7 @@ namespace Taste.DataAccess
             : base(options)
         {
         }
+
+        public DbSet<Category> Category { get; set; }
     }
 }
