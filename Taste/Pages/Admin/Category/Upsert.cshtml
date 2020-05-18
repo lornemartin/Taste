@@ -5,8 +5,12 @@
     <div class="container">
         <div class="row px-2 mx-2 backgroundWhite" border">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>"
+            @if (Model.CategoryObj.Id != 0)
+            {
+                <input type ="hidden" asp-for="CategoryObj.Id" />
+            }
             <div class="col-12 px-3" style="border-bottom:1px solid #325d88">
-                <h2 class="text-primary">Category</h2>
+                <h2 class="text-primary">@(Model.CategoryObj.Id!=0 ? "Update" : "Create" ) Category</h2>
             </div>
 
             <div class="col-8 pt-3">
@@ -42,7 +46,7 @@
                                 }
                             </div>
                             <div class="col-6">
-                                <a asp-page="./Index" class="btn btn-success form-control">Back to List</a>"
+                                <a asp-page="./Index" class="btn btn-success form-control">Back to List</a>
                             </div>
                         </div>
                     </div>
