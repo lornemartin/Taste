@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Taste.DataAccess.Migrations;
+using Taste.Models;
 
 namespace Taste.DataAccess
 {
@@ -14,5 +16,6 @@ namespace Taste.DataAccess
         }
 
         public DbSet<Category> Category { get; set; }
+        public DbSet<FoodType> FoodType { get; set; }
     }
 }
