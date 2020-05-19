@@ -36,7 +36,7 @@ namespace Taste.Controllers
             _unitOfWork.FoodType.Remove(objFromDb);
             _unitOfWork.Save();
 
-            return Json(new { success = true, message = "Delete Successful" })
+            return Json(new { success = true, message = "Delete Successful" });
         }
     }
 }
