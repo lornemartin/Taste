@@ -25,7 +25,7 @@ namespace Taste.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            return Json(new { data = _unitOfWork.FoodType.GetAll() });
+            return Json(new { data = _unitOfWork.me.GetAll() });
         }
 
         [HttpDelete("{id}")]
