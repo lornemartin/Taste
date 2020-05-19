@@ -18,10 +18,10 @@ namespace Taste.Pages.Admin.Category
         }
 
         [BindProperty]
-        public DataAccess.Category CategoryObj { get; set; }
+        public Models.Category CategoryObj { get; set; }
         public IActionResult OnGet(int? id)
         {
-            CategoryObj = new DataAccess.Category();
+            CategoryObj = new Models.Category();
 
             if(id!=null)
             {

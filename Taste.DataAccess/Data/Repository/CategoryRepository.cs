@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Taste.DataAccess.Data.Repository.IRepository;
+using Taste.Models;
 
 namespace Taste.DataAccess.Data.Repository
 {
