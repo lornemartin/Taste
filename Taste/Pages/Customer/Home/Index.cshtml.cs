@@ -24,7 +24,7 @@ namespace Taste.Pages.Customer.Home
         public IEnumerable<Category> CategoryList { get; set; }
         public void OnGet()
         {
-            MenuItemList = _unitOfWork.MenuItem.GetAll(null, null, "Category.FoodType");
+            MenuItemList = _unitOfWork.MenuItem.GetAll(null, null, "Category,FoodType");
             CategoryList = _unitOfWork.Category.GetAll(null, q => q.OrderBy(c => c.DisplayOrder), null);
         }
     }
