@@ -53,23 +53,44 @@ namespace Taste.Pages.Admin.MenuItem
             {
                 return Page();
             }
-            if(MenuItemObj.MenuItem.Id == 0)
+
+            var objFromDb = _unitOfWork.MenuItem.Get(MenuItemObj.MenuItem.Id);
+            if (files.Count<0)
             {
                 string fileName = Guid.NewGuid().ToString();
                 var uploads = Path.Combine(webRootPath, @"images\menuItems");
                 var extension = Path.GetExtension(files[0].FileName);
 
-                using (var fileStream = new FileStream(Path.Combine(uploads,fileName+extension), FileMode.Create))
+                var imagePath = Path.Combine(webRootPath, objFromDb.Image.TrimStart('\\'));
+                if (System.IO.File.Exists(imagePath))
+                {
+                    System.IO.File.Delete(imagePath);
+                }
+
+                using (var fileStream = new FileStream(Path.Combine(uploads, fileName + extension), FileMode.Create))
                 {
                     files[0].CopyTo(fileStream);
                 }
                 MenuItemObj.MenuItem.Image = @"\image\menuItems\" + fileName + extension;
+            }
 
-                _unitOfWork.MenuItem.Add(MenuItemObj.MenuItem);
+            if(MenuItemObj.MenuItem.Id == 0)
+            {
+               _unitOfWork.MenuItem.Add(MenuItemObj.MenuItem);
             }
             else
             {
-                _unitOfWork.Category.Update(CategoryObj);
+                //Edit Menu Item
+                if(files.Count>0)
+                {
+                    _unitOfWork.MenuItem.Add(MenuItemObj.MenuItem);
+                }
+                else
+                {
+                    MenuItemObj.MenuItem.Image = objFromDb.Image;
+                }
+
+                _unitOfWork.MenuItem.Update(MenuItemObj.MenuItem);
             }
             _unitOfWork.Save();
             return RedirectToPage("./Index");
