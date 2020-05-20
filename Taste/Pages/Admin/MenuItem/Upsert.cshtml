@@ -92,6 +92,13 @@
                     </div>
                 </div>
             </div>
+
+            @if(Model.MenuItemObj.MenuItem != null)
+            {
+                <div class="col-4 p-4">
+                    <img src="@Model.MenuItemObj.MenuItem.Image" width="100%" style="border-radius:5px; border:1px solid #bbb9b9" />
+                </div>
+            }
     </div>
 </form>
 
