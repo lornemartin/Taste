@@ -3364,12 +3364,18 @@
       "Taste.Utility/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.UI": "3.1.3"
+        },
         "compile": {
           "bin/placeholder/Taste.Utility.dll": {}
         },
         "runtime": {
           "bin/placeholder/Taste.Utility.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },

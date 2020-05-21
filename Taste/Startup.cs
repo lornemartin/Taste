@@ -14,6 +14,8 @@ using Microsoft.Extensions.Hosting;
 using Taste.DataAccess;
 using Taste.DataAccess.Data.Repository.IRepository;
 using Taste.DataAccess.Data.Repository;
+using Microsoft.AspNetCore.Identity.UI.Services;
+using Taste.Utility;
 
 namespace Taste
 {
@@ -35,6 +37,8 @@ namespace Taste
             services.AddIdentity<IdentityUser,IdentityRole>()
                 .AddDefaultTokenProviders()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+            
+            services.AddSingleton<IEmailSender, EmailSender>();
 
             services.AddScoped<IUnitOfWork, UnitOfWork>();
 
