@@ -25,7 +25,7 @@ namespace Taste.Controllers
             return Json(new { data = _unitOfWork.ApplicationUser.GetAll() });
         }
 
-        [HttpPost("{id}")]
+        [HttpPost]
         public IActionResult LockUnlock([FromBody]string id)
         {
             var objFromDb = _unitOfWork.ApplicationUser.GetFirstOrDefault(u => u.Id == id);
