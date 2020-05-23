@@ -13,6 +13,8 @@ namespace Taste.DataAccess.Data.Repository.IRepository
 
         IApplicationUserRepository ApplicationUser { get; }
 
+        IShoppingCartRepository ShoppingCart { get; }
+
         void Save();
     }
 }
