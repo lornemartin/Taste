@@ -1,40 +1,44 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lrnma\\source\\repos\\Training\\Taste\\Taste\\Taste.csproj": {}
+    "C:\\Users\\lorne\\source\\repos\\Training\\Taste\\Taste\\Taste.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lrnma\\source\\repos\\Training\\Taste\\Taste.DataAccess\\Taste.DataAccess.csproj": {
-      "version": "1.0.0",
+    "C:\\Users\\lorne\\source\\repos\\Training\\Taste\\Taste.DataAccess\\Taste.DataAccess.csproj": {
+      "version": "2020.1.1950",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lrnma\\source\\repos\\Training\\Taste\\Taste.DataAccess\\Taste.DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\lorne\\source\\repos\\Training\\Taste\\Taste.DataAccess\\Taste.DataAccess.csproj",
         "projectName": "Taste.DataAccess",
-        "projectPath": "C:\\Users\\lrnma\\source\\repos\\Training\\Taste\\Taste.DataAccess\\Taste.DataAccess.csproj",
-        "packagesPath": "C:\\Users\\lrnma\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lrnma\\source\\repos\\Training\\Taste\\Taste.DataAccess\\obj\\",
+        "projectPath": "C:\\Users\\lorne\\source\\repos\\Training\\Taste\\Taste.DataAccess\\Taste.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\lorne\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lorne\\source\\repos\\Training\\Taste\\Taste.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\lrnma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lorne\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\DevExpress 18.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\lrnma\\source\\repos\\Training\\Taste\\Taste.Models\\Taste.Models.csproj": {
-                "projectPath": "C:\\Users\\lrnma\\source\\repos\\Training\\Taste\\Taste.Models\\Taste.Models.csproj"
+              "C:\\Users\\lorne\\source\\repos\\Training\\Taste\\Taste.Models\\Taste.Models.csproj": {
+                "projectPath": "C:\\Users\\lorne\\source\\repos\\Training\\Taste\\Taste.Models\\Taste.Models.csproj"
               },
-              "C:\\Users\\lrnma\\source\\repos\\Training\\Taste\\Taste.Utility\\Taste.Utility.csproj": {
-                "projectPath": "C:\\Users\\lrnma\\source\\repos\\Training\\Taste\\Taste.Utility\\Taste.Utility.csproj"
+              "C:\\Users\\lorne\\source\\repos\\Training\\Taste\\Taste.Utility\\Taste.Utility.csproj": {
+                "projectPath": "C:\\Users\\lorne\\source\\repos\\Training\\Taste\\Taste.Utility\\Taste.Utility.csproj"
               }
             }
           }
@@ -83,30 +87,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\lrnma\\source\\repos\\Training\\Taste\\Taste.Models\\Taste.Models.csproj": {
-      "version": "1.0.0",
+    "C:\\Users\\lorne\\source\\repos\\Training\\Taste\\Taste.Models\\Taste.Models.csproj": {
+      "version": "2020.1.1950",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lrnma\\source\\repos\\Training\\Taste\\Taste.Models\\Taste.Models.csproj",
+        "projectUniqueName": "C:\\Users\\lorne\\source\\repos\\Training\\Taste\\Taste.Models\\Taste.Models.csproj",
         "projectName": "Taste.Models",
-        "projectPath": "C:\\Users\\lrnma\\source\\repos\\Training\\Taste\\Taste.Models\\Taste.Models.csproj",
-        "packagesPath": "C:\\Users\\lrnma\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lrnma\\source\\repos\\Training\\Taste\\Taste.Models\\obj\\",
+        "projectPath": "C:\\Users\\lorne\\source\\repos\\Training\\Taste\\Taste.Models\\Taste.Models.csproj",
+        "packagesPath": "C:\\Users\\lorne\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lorne\\source\\repos\\Training\\Taste\\Taste.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\lrnma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lorne\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\DevExpress 18.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -148,30 +156,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\lrnma\\source\\repos\\Training\\Taste\\Taste.Utility\\Taste.Utility.csproj": {
-      "version": "1.0.0",
+    "C:\\Users\\lorne\\source\\repos\\Training\\Taste\\Taste.Utility\\Taste.Utility.csproj": {
+      "version": "2020.1.1950",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lrnma\\source\\repos\\Training\\Taste\\Taste.Utility\\Taste.Utility.csproj",
+        "projectUniqueName": "C:\\Users\\lorne\\source\\repos\\Training\\Taste\\Taste.Utility\\Taste.Utility.csproj",
         "projectName": "Taste.Utility",
-        "projectPath": "C:\\Users\\lrnma\\source\\repos\\Training\\Taste\\Taste.Utility\\Taste.Utility.csproj",
-        "packagesPath": "C:\\Users\\lrnma\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lrnma\\source\\repos\\Training\\Taste\\Taste.Utility\\obj\\",
+        "projectPath": "C:\\Users\\lorne\\source\\repos\\Training\\Taste\\Taste.Utility\\Taste.Utility.csproj",
+        "packagesPath": "C:\\Users\\lorne\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lorne\\source\\repos\\Training\\Taste\\Taste.Utility\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\lrnma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lorne\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\DevExpress 18.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -212,41 +224,48 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\lrnma\\source\\repos\\Training\\Taste\\Taste\\Taste.csproj": {
-      "version": "1.0.0",
+    "C:\\Users\\lorne\\source\\repos\\Training\\Taste\\Taste\\Taste.csproj": {
+      "version": "2020.1.1950",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lrnma\\source\\repos\\Training\\Taste\\Taste\\Taste.csproj",
+        "projectUniqueName": "C:\\Users\\lorne\\source\\repos\\Training\\Taste\\Taste\\Taste.csproj",
         "projectName": "Taste",
-        "projectPath": "C:\\Users\\lrnma\\source\\repos\\Training\\Taste\\Taste\\Taste.csproj",
-        "packagesPath": "C:\\Users\\lrnma\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lrnma\\source\\repos\\Training\\Taste\\Taste\\obj\\",
+        "projectPath": "C:\\Users\\lorne\\source\\repos\\Training\\Taste\\Taste\\Taste.csproj",
+        "packagesPath": "C:\\Users\\lorne\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lorne\\source\\repos\\Training\\Taste\\Taste\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\lrnma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lorne\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\DevExpress 18.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\lrnma\\source\\repos\\Training\\Taste\\Taste.DataAccess\\Taste.DataAccess.csproj": {
-                "projectPath": "C:\\Users\\lrnma\\source\\repos\\Training\\Taste\\Taste.DataAccess\\Taste.DataAccess.csproj"
+              "C:\\Users\\lorne\\source\\repos\\Training\\Taste\\Taste.DataAccess\\Taste.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\lorne\\source\\repos\\Training\\Taste\\Taste.DataAccess\\Taste.DataAccess.csproj"
               },
-              "C:\\Users\\lrnma\\source\\repos\\Training\\Taste\\Taste.Models\\Taste.Models.csproj": {
-                "projectPath": "C:\\Users\\lrnma\\source\\repos\\Training\\Taste\\Taste.Models\\Taste.Models.csproj"
+              "C:\\Users\\lorne\\source\\repos\\Training\\Taste\\Taste.Models\\Taste.Models.csproj": {
+                "projectPath": "C:\\Users\\lorne\\source\\repos\\Training\\Taste\\Taste.Models\\Taste.Models.csproj"
+              },
+              "C:\\Users\\lorne\\source\\repos\\Training\\Taste\\Taste.Utility\\Taste.Utility.csproj": {
+                "projectPath": "C:\\Users\\lorne\\source\\repos\\Training\\Taste\\Taste.Utility\\Taste.Utility.csproj"
               }
             }
           }
@@ -311,7 +330,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -19,6 +19,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Taste.DataAccess\Taste.DataAccess.csproj" />
     <ProjectReference Include="..\Taste.Models\Taste.Models.csproj" />
+    <ProjectReference Include="..\Taste.Utility\Taste.Utility.csproj" />
   </ItemGroup>
 
   <ItemGroup>

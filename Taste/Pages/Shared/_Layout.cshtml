@@ -1,4 +1,6 @@
-﻿@using Taste.Utility
+﻿@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+@using Taste.Utility
 
 <!DOCTYPE html>
 <html lang="en">
@@ -30,23 +32,35 @@
                         </li>
                         @if (User.IsInRole(SD.ManagerRole))
                         {
-                        <li class="nav-item dropdown">
-                            <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropDown" data-toggle="dropdown">
-                                Admin
-                            </a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item text-black-50" asp-page="/Admin/Category/Index">Category</a>
-                                <a class="dropdown-item text-black-50" asp-page="/Admin/FoodType/Index">Food Type</a>
-                                <a class="dropdown-item text-black-50" asp-page="/Admin/menuItem/Index">Menu Item</a>
-                                <a class="dropdown-item text-black-50" asp-page="/Admin/User/Index">Users</a>
-                            </div>
-                        </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropDown" data-toggle="dropdown">
+                                    Admin
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item text-black-50" asp-page="/Admin/Category/Index">Category</a>
+                                    <a class="dropdown-item text-black-50" asp-page="/Admin/FoodType/Index">Food Type</a>
+                                    <a class="dropdown-item text-black-50" asp-page="/Admin/menuItem/Index">Menu Item</a>
+                                    <a class="dropdown-item text-black-50" asp-page="/Admin/User/Index">Users</a>
+                                </div>
+                            </li>
                         }
-                        <li>
+                        @if (HttpContextAccessor.HttpContext.Session.GetInt32(SD.ShoppingCart) != null)
+                        {
                             <a href="#" class="nav-link text-white 50">
-                                <i class="fas fa-shopping-cart"></i> &nbsp; (0)
+                                @{
+                                    var count = HttpContextAccessor.HttpContext.Session.GetInt32(SD.ShoppingCart);
+                                }
+                                <i class="fas fa-shopping-cart"></i> &nbsp; (@count)
                             </a>
-                        </li>
+                        }
+                        else
+                        {
+                            <li>
+                                <a href="#" class="nav-link text-white 50">
+                                    <i class="fas fa-shopping-cart"></i> &nbsp; (0)
+                                </a>
+                            </li>
+                        }
                     </ul>
                 </div>
             </div>
