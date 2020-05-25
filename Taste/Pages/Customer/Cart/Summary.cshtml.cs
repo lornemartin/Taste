@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Taste.DataAccess.Data.Repository.IRepository;
 using Taste.Models;
 using Taste.Models.ViewModels;
+using Taste.Utility;
 
 namespace Taste.Pages.Customer.Cart
 {
@@ -61,6 +62,25 @@ namespace Taste.Pages.Customer.Cart
             var claim = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
 
             detailCart.listCart = _unitOfWork.ShoppingCart.GetAll(c => c.ApplicationUserId == claim.Value).ToList();
+
+            detailCart.OrderHeader.PaymentStatus = SD.PaymentStatusPending;
+            detailCart.OrderHeader.OrderDate = DateTime.Now;
+            detailCart.OrderHeader.UserId = claim.Value;
+            detailCart.OrderHeader.Status = SD.PaymentStatusPending;
+            detailCart.OrderHeader.PickupTime = Convert.ToDateTime(detailCart.OrderHeader.PickupDate.ToShortDateString() + " " + detailCart.OrderHeader.PickupTime.ToShortTimeString());
+
+            List<OrderDetails> orderDetailsList = new List<OrderDetails>();
+            _unitOfWork.OrderHeader.Add(detailCart.OrderHeader);
+            _unitOfWork.Save();
+
+            foreach(var item in detailCart.listCart)
+            {
+                item.MenuItem = _unitOfWork.MenuItem.GetFirstOrDefault(m => m.Id == item.MenuItemId);
+                OrderDetails orderDetails
+            }
+
+
+          
 
         }
     }
