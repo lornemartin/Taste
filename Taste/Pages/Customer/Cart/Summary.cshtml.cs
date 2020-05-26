@@ -87,7 +87,7 @@ namespace Taste.Pages.Customer.Cart
                     Price = item.MenuItem.Price,
                     Count = item.Count
                 };
-                detailCart.OrderHeader.OrderTotal+=orderDetails.Count*orderDetails.Price);
+                detailCart.OrderHeader.OrderTotal+=(orderDetails.Count*orderDetails.Price);
                 _unitOfWork.OrderDetails.Add(orderDetails);
             }
             _unitOfWork.ShoppingCart.RemoveRange(detailCart.listCart);
