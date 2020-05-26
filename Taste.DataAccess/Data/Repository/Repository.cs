@@ -85,5 +85,10 @@ namespace Taste.DataAccess.Data.Repository
         {
             dbSet.Remove(entity);
         }
+
+        public void RemoveRange(IEnumerable<T> entity)
+        {
+            dbSet.RemoveRange(entity);
+        }
     }
 }

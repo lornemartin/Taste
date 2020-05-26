@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Taste.DataAccess.Data.Repository.IRepository;
@@ -76,11 +77,23 @@ namespace Taste.Pages.Customer.Cart
             foreach(var item in detailCart.listCart)
             {
                 item.MenuItem = _unitOfWork.MenuItem.GetFirstOrDefault(m => m.Id == item.MenuItemId);
-                OrderDetails orderDetails
+                OrderDetails orderDetails = new OrderDetails
+                {
+                    MenuItemId = item.MenuItemId,
+                    OrderId = detailCart.OrderHeader.Id,
+                    Description = item.MenuItem.Description,
+                    Name = item.MenuItem.Name,
+                    Price = item.MenuItem.Price,
+                    Count = item.Count
+                };
+                detailCart.OrderHeader.OrderTotal+=orderDetails.Count*orderDetails.Price);
+                _unitOfWork.OrderDetails.Add(orderDetails);
             }
+            _unitOfWork.ShoppingCart.RemoveRange(detailCart.listCart);
+            HttpContext.Session.SetInt32(SD.ShoppingCart, 0);
+            _unitOfWork.Save();
 
-
-          
+            
 
         }
     }
