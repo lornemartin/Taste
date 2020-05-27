@@ -68,6 +68,12 @@ namespace Taste
                 options.AccessDeniedPath = $"/Identity/Account/AccessDenied";
 
             });
+
+            services.AddAuthentication().AddFacebook(facebookOptions =>
+            {
+                facebookOptions.AppId = "879522232460615";
+                facebookOptions.AppSecret = "fb3ed26deb8f8c07d226d486d23fc78b";
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
