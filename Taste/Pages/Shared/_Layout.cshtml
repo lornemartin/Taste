@@ -44,6 +44,20 @@
                                 </div>
                             </li>
                         }
+
+                        @if (User.IsInRole(SD.ManagerRole) || User.IsInRole(SD.KitchenRole))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-white" asp-page="/Admin/Order/ManageOrder">Manage Order</a>
+                            </li>
+                        }
+                        @if (User.IsInRole(SD.ManagerRole) || User.IsInRole(SD.FrontDeskRole))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-white" asp-page="/Admin/Order/OrderList">Order Pickup</a>
+                            </li>
+                        }
+
                         @if (HttpContextAccessor.HttpContext.Session.GetInt32(SD.ShoppingCart) != null)
                         {
                             <a asp-page="/Customer/Cart/Index" class="nav-link text-white 50">
