@@ -91,6 +91,7 @@ namespace Taste.Pages.Customer.Cart
                 detailCart.OrderHeader.OrderTotal+=(orderDetails.Count*orderDetails.Price);
                 _unitOfWork.OrderDetails.Add(orderDetails);
             }
+            detailCart.OrderHeader.OrderTotal = Convert.ToDouble(String.Format("{0:.##}", detailCart.OrderHeader.OrderTotal));
             _unitOfWork.ShoppingCart.RemoveRange(detailCart.listCart);
             HttpContext.Session.SetInt32(SD.ShoppingCart, 0);
             _unitOfWork.Save();
