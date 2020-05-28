@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "45Xux+COIjFouJ2WsZQD7eeVjeMFOvvZ3JOGy+ogjOxn1ZQFl4kw+TScGhfdJmRhMUxTw7hu9b4pgiWTyXEJAg==",
+  "dgSpecHash": "Mm5OqLZf3r1N2YLrLhgvi/GANejDXTJTSTGdYHFBSvF1SNmowZfV5MNStUDTEVwaOT76re6M6zDhnDl5tkbBlQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\lorne\\source\\repos\\Training\\Taste\\Taste\\Taste.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\lorne\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\lorne\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
     "C:\\Users\\lorne\\.nuget\\packages\\microsoft.aspnetcore.authentication.facebook\\3.1.4\\microsoft.aspnetcore.authentication.facebook.3.1.4.nupkg.sha512",
+    "C:\\Users\\lorne\\.nuget\\packages\\microsoft.aspnetcore.authentication.microsoftaccount\\3.1.4\\microsoft.aspnetcore.authentication.microsoftaccount.3.1.4.nupkg.sha512",
     "C:\\Users\\lorne\\.nuget\\packages\\microsoft.aspnetcore.authorization\\2.2.0\\microsoft.aspnetcore.authorization.2.2.0.nupkg.sha512",
     "C:\\Users\\lorne\\.nuget\\packages\\microsoft.aspnetcore.authorization.policy\\2.2.0\\microsoft.aspnetcore.authorization.policy.2.2.0.nupkg.sha512",
     "C:\\Users\\lorne\\.nuget\\packages\\microsoft.aspnetcore.cors\\2.2.0\\microsoft.aspnetcore.cors.2.2.0.nupkg.sha512",
