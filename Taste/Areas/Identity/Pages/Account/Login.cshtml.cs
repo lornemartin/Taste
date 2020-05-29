@@ -43,7 +43,7 @@ namespace Taste.Areas.Identity.Pages.Account
         public class InputModel
         {
             [Required]
-            [EmailAddress]
+            [EmailAddress(ErrorMessage = "Invalid Email")]
             public string Email { get; set; }
 
             [Required]
