@@ -5,7 +5,7 @@
   },
   "projects": {
     "C:\\Users\\lorne\\source\\repos\\Training\\Taste\\Taste.DataAccess\\Taste.DataAccess.csproj": {
-      "version": "2020.1.1950",
+      "version": "1.0.0",
       "restore": {
         "projectUniqueName": "C:\\Users\\lorne\\source\\repos\\Training\\Taste\\Taste.DataAccess\\Taste.DataAccess.csproj",
         "projectName": "Taste.DataAccess",
@@ -92,7 +92,7 @@
       }
     },
     "C:\\Users\\lorne\\source\\repos\\Training\\Taste\\Taste.Models\\Taste.Models.csproj": {
-      "version": "2020.1.1950",
+      "version": "1.0.0",
       "restore": {
         "projectUniqueName": "C:\\Users\\lorne\\source\\repos\\Training\\Taste\\Taste.Models\\Taste.Models.csproj",
         "projectName": "Taste.Models",
@@ -161,7 +161,7 @@
       }
     },
     "C:\\Users\\lorne\\source\\repos\\Training\\Taste\\Taste.Utility\\Taste.Utility.csproj": {
-      "version": "2020.1.1950",
+      "version": "1.0.0",
       "restore": {
         "projectUniqueName": "C:\\Users\\lorne\\source\\repos\\Training\\Taste\\Taste.Utility\\Taste.Utility.csproj",
         "projectName": "Taste.Utility",
@@ -229,7 +229,7 @@
       }
     },
     "C:\\Users\\lorne\\source\\repos\\Training\\Taste\\Taste\\Taste.csproj": {
-      "version": "2020.1.1950",
+      "version": "1.0.0",
       "restore": {
         "projectUniqueName": "C:\\Users\\lorne\\source\\repos\\Training\\Taste\\Taste\\Taste.csproj",
         "projectName": "Taste",

@@ -3353,7 +3353,7 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Taste.DataAccess/2020.1.1950": {
+      "Taste.DataAccess/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
@@ -3361,8 +3361,8 @@
           "Microsoft.AspNetCore.Mvc": "2.2.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.3",
           "Stripe.net": "36.11.0",
-          "Taste.Models": "2020.1.1950",
-          "Taste.Utility": "2020.1.1950"
+          "Taste.Models": "1.0.0",
+          "Taste.Utility": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Taste.DataAccess.dll": {}
@@ -3374,7 +3374,7 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "Taste.Models/2020.1.1950": {
+      "Taste.Models/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
@@ -3388,7 +3388,7 @@
           "bin/placeholder/Taste.Models.dll": {}
         }
       },
-      "Taste.Utility/2020.1.1950": {
+      "Taste.Utility/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
@@ -10155,17 +10155,17 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
-    "Taste.DataAccess/2020.1.1950": {
+    "Taste.DataAccess/1.0.0": {
       "type": "project",
       "path": "../Taste.DataAccess/Taste.DataAccess.csproj",
       "msbuildProject": "../Taste.DataAccess/Taste.DataAccess.csproj"
     },
-    "Taste.Models/2020.1.1950": {
+    "Taste.Models/1.0.0": {
       "type": "project",
       "path": "../Taste.Models/Taste.Models.csproj",
       "msbuildProject": "../Taste.Models/Taste.Models.csproj"
     },
-    "Taste.Utility/2020.1.1950": {
+    "Taste.Utility/1.0.0": {
       "type": "project",
       "path": "../Taste.Utility/Taste.Utility.csproj",
       "msbuildProject": "../Taste.Utility/Taste.Utility.csproj"
@@ -10183,9 +10183,9 @@
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.3",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.3",
       "Stripe.net >= 36.11.0",
-      "Taste.DataAccess >= 2020.1.1950",
-      "Taste.Models >= 2020.1.1950",
-      "Taste.Utility >= 2020.1.1950"
+      "Taste.DataAccess >= 1.0.0",
+      "Taste.Models >= 1.0.0",
+      "Taste.Utility >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -10193,7 +10193,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
-    "version": "2020.1.1950",
+    "version": "1.0.0",
     "restore": {
       "projectUniqueName": "C:\\Users\\lorne\\source\\repos\\Training\\Taste\\Taste\\Taste.csproj",
       "projectName": "Taste",
